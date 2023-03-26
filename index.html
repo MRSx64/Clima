@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Previsão de Tempo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <main>
+        <section class="temperature-now">
+        <div class="form">
+            <div class="form-input-container">
+                <h2>Confira o clima de sua cidade</h2>
+                <input type="text" placeholder="Digite o nome da cidade" id="city-input">
+            <button id="search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+        </div>
+        <div id="weather-data" class="hide">
+            <div class="location">
+                <h2><i class="fa-solid fa-location-dot"></i>
+                    <span id="city"></span>
+                    <img src="" alt="Bandeira do País" id="country">
+                </h2>  
+            </div>
+            <div class="temp">
+                <div class="number" id="temperature"></div>
+                <div class="celsius">ºC</div>
+            </div>
+            <div class="description-container">
+                <span id="description"></span>
+                <img src="" id="wheather-icon" alt="condições do tempo">
+            </div>
+            <div class="details-container">
+                <p id="humidity">
+                    <i class="fa-solid fa-droplet"></i>
+                    <span></span>
+                </p>
+                <p id="wind">
+                    <i class="fa-solid fa-wind"></i>
+                    <span></span>
+                </p>
+            </div>
+        </div> 
+        </div>
+        
+
+        </section>
+
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
