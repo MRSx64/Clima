@@ -6,6 +6,7 @@ const apiUnsplash = "https://source.unsplash.com/1600x900/?";
 const searchBtn = document.querySelector("#search");
 const cityInput = document.querySelector("#city-input");
 
+const tempNow = document.querySelector("temperature-now")
 const cityElement = document.querySelector("#city");
 const tempElement = document.querySelector("#temperature");
 const descElement= document.querySelector("#description");
@@ -49,6 +50,7 @@ const showWeatherData = async (city) => {
     document.body.style.backgroundImage = `url("${apiUnsplash + city}")`;
 
     weatherContainer.classList.remove("hide");
+
 
 };
 
